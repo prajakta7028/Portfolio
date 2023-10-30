@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- FontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header section -->
+      <section id="header">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#"><span>P</span>ortfolio</a>
+          </div>
+          <div class="nav-menu">
+            <ul id="sidemenu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#service">Services</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#project">Project</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <div class="bottom-left">
+            <h1 class="name">Prajakta P. <span>Misal</span></h1>
+            <div class="text-3">  Hi, I'm Prajakta!<span class="typing"></span></div>
+            <p class="short-desc">
+              I'm a working in area of front-end,back-end development. I have a degree in Electronics and Telecommunication and am certified in HTML, CSS, and JavaScript,c,cpp,python,Boostrap,Fullstack. I've worked on a variety of projects, ranging from small business websites to large e-commerce platforms”.Along with am working as a Coding Faculty.
+            </p>
+            <a href="PrajaktaMisal.pdf" target="_blank" class="btn-cv" download
+              >Download CV</a
+            >
+          </div>
+          <div class="bottom-right">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- About section -->
+      <section id="about">
+        <div class="about-left">
+          <img src="assets/img.jpeg" alt="user-sideimg" />
+        </div>
+        <div class="about-right">
+          <div class="section-title">
+            <h2 class="sub-title">About Me</h2>
+            <!-- <h3 class="title"></h3> -->
+          </div>
+          <p class="desc">
+            Hi, I'm Prajakta! I'm a working in area of front-end,back-end development. I have a degree in Electronics and Telecommunication and am certified in HTML, CSS, and JavaScript,c,cpp,python,Boostrap,Fullstack. I've worked on a variety of projects, ranging from small business websites to large e-commerce platforms”.Along with am working as a Coding Faculty.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">
+              Skills
+            </p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li>
+                <span>Programming Languages</span><br />C,CPP,Java,Python,SQL
+              </li>
+              <li><span>Front-end Technology</span><br />HTML,CSS,BOOSTRAP,PHP,JavaScript</li>
+              <li><span>Back-end with Framework</span><br />JDBC,Servlet,JSP
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li>
+                <span>Internship</span><br />
+                Full Stack Development- Digital Microsys     
+                Technologies Kolhapur.
+    
+              </li>
+              <li>
+                <span>Coding Faculty</span><br />
+              </li>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li>
+                <span>2014-19(B.E(ENTC))</span><br /> 
+                DKTE’s TEI, Ichalkaranji.Shivaji University
+              </li>
+              <li>
+                <span>2014-2012</span><br />
+                12th from Kamala College Kolhapur
+              </li>
+              <li>
+                <span>2012-2010</span><br />
+                10th from Jawahar Navodaya Vidyalaya Kagal
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Service section -->
+      <section id="service">
+        <div class="section-title">
+          <h2 class="sub-title">Skill Sets</h2>
+          <h3 class="title">A brief of Offerting Services with Skill-Sets</h3>
+        </div>
+        <div class="services">
+          <div>
+            <i class="fa-brands fa-battle-net"></i>
+            <h2>Full Stack Development</h2>
+            <p>
+              If we want users to like our software, we should design it to behave like a likeable person.” “Define what the product will do before you design how the product will do it.”
+            </p>
+          </div>
+          <!-- <div> 
+            <i class="fa-solid fa-globe"></i>
+            <h2>Print Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Wordpress</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-pix"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-lock"></i>
+            <h2>Cyber Security</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              fugit optio dolore.
+            </p>
+          </div>-->
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              “If you think math is hard, try web design.” “Design is not just what it looks like and feels like. Design is how it works.” 
+            </p>
+          </div>
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Coding Tutor</h2>
+            <p>
+              Give someone a program; you frustrate them for a day; teach them how to program, and you frustrate them for a lifetime – David Leinweber.
+            </p>
+          </div>
+          <div>
+            <i class="fa-brands fa-pix"></i>
+            <h2>Artist</h2>
+            <p>
+              If there were only one truth, you couldn't paint a hundred canvases on the same theme.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <div class="section-title">
+          <h2 class="sub-title">My Portfolio</h2>
+          <h3 class="title">Awesome Works</h3>
+          <div class="project-list">
+            <div class="project">
+              <img src="assets/project.jpg" alt="project1" />
+              <div class="layer">
+                <h3>Web based GPS tracking system without any third party server</h3>
+                <p> 
+                  The system using GPS+GPRS module by using controller   
+                  which has input location, time, date etc. And the emergency  
+                  switch which can be pressed in case of  emergency occurs. Data  
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/project.jpg" alt="project2" />
+              <div class="layer">
+                <h3>SIMS(Student Information Management System)</h3>
+                 <p> 
+                  SIMS is web application designed for Zila Parishad School & colleges  
+                  for maintaining online student data for to reduce clerical work and maintain 
+                  all information. 
+                  Platform: Java,Servlet,JSP.    Frontend: HTML
+                  Database: Oracle	           Role: Java Developer
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/project.jpg" alt="project3" />
+              <div class="layer">
+                <h3>Freelancing Legal Service Website for Advocate</h3>
+                 <p> 
+                  It is a professionally designed theme to work best as   
+                  a portfolio website for law firms. 
+                  Platform:Bootstrap,Javascript
+  
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+            <div class="project">
+              <img src="assets/project.jpg" alt="project4" />
+              <div class="layer">
+                <h3>Farm Management System</h3>
+                 <p> 
+                  The main purpose of this Farm Management System in    
+                  PHP/MySQLi is to help farmers manage their inventory of  
+                  products and transactions with more ease and accurately. 
+                  Platform: PHP. CSS, JavaScript, BootStrap and MySQL.
+                </p>
+                <a href="#"
+                  ><i class="fa fa-external-link" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial section 
+      <section id="testimonial">
+        <div class="section-title">
+          <h2 class="sub-title">Testimonial</h2>
+          <h3 class="title">People What Are Saying</h3>
+          <div class="testimonial-list">
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                blanditiis suscipit sunt itaque nobis.
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="assets/testimonials-img-1.jpg"
+                    alt="testimonials-img-1"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">John Doe</h3>
+                  <h5 class="resignation">Web Developer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                blanditiis suscipit sunt itaque nobis.
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="assets/testimonials-img-2.jpg"
+                    alt="testimonials-img-2"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Natasha Malkova</h3>
+                  <h5 class="resignation">Graphics Designer</h5>
+                </div>
+              </div>
+            </div>
+            <div class="review">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="review-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                blanditiis suscipit sunt itaque nobis.
+              </p>
+              <div class="review-by">
+                <div class="img">
+                  <img
+                    src="assets/testimonials-img-3.jpg"
+                    alt="testimonials-img-3"
+                  />
+                </div>
+                <div class="info">
+                  <h3 class="name">Amy Koney</h3>
+                  <h5 class="resignation">Digital Marketer</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>-->
+      <!-- Contact section -->
+      <section id="contact">
+        <div class="section-title">
+          <h2 class="sub-title">Contact</h2>
+          <h3 class="title">Get in Touch</h3>
+        </div>
+        <div class="content">
+          <div class="contact-left">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit">
+                Send Message <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+          <div class="vl"></div>
+          <div class="contact-right">
+            <div class="col address">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info">
+                <h2 class="title">Address</h2>
+                <p>Near Union Bank,Rajarampuri 5th lane Kolhapur</p>
+              </div>
+            </div>
+            <div class="col phone">
+              <i class="fa-solid fa-phone"></i>
+              <div class="info">
+                <h2 class="title">Phone</h2>
+                <p>+91-7028825904</p>
+              </div>
+            </div>
+            <div class="col email">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info">
+                <h2 class="title">Email</h2>
+                <p>Prajaktamisal197@gmail.com</p>
+              </div>
+            </div>
+            <div class="col website">
+              <i class="fa-solid fa-globe"></i>
+              <div class="info">
+                <h2 class="title">Website</h2>
+                <p>www.domain.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>
+            Copyright ©️ Portfolio | Made with
+            <i class="fa-solid fa-heart"></i> by
+            <a href="#">--PR@J@KT@-M!$@L--</a>
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
